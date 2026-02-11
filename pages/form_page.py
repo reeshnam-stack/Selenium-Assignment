@@ -9,7 +9,7 @@ class FormPage(BasePage):
     POSTAL_CODE = (By.ID, "postal-code")
     CONTINUE_BUTTON = (By.ID, "continue")
     FINISH_BUTTON = (By.ID, "finish")
-    SUCCESS_MSG = (By.CLASS_NAME, "complete-header")  # "THANK YOU FOR YOUR ORDER"
+    SUCCESS_MSG = (By.CLASS_NAME, "complete-header") 
 
     def fill_checkout_form(self, first_name, last_name, postal_code):
         self.send_keys(self.FIRST_NAME, first_name)
